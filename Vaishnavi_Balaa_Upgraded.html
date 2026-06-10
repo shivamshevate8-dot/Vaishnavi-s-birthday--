@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Balaa 💜</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffb6d5,#d8b4fe);
+text-align:center;
+color:white;
+overflow:hidden;
+}
+.container{padding:20px;}
+.card{
+max-width:700px;
+margin:auto;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:25px;
+}
+button{
+padding:14px 24px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+#letter{display:none;font-size:18px;line-height:1.8;}
+.float{
+position:fixed;
+font-size:28px;
+animation:rise 12s linear infinite;
+}
+@keyframes rise{
+0%{transform:translateY(100vh);opacity:0}
+100%{transform:translateY(-100px);opacity:1}
+}
+.kiss{
+font-size:45px;
+margin:20px 0;
+animation:pulse 2s infinite;
+}
+@keyframes pulse{
+50%{transform:scale(1.15);}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>🎂 Happy Birthday Vaishnavi 🎂</h1>
+<h2>My Balaa 💜</h2>
+
+<div class="card">
+<p>🎀 🐱 💜 🧁 🎈</p>
+
+<button onclick="document.getElementById('letter').style.display='block'">
+💌 Open My Love Letter
+</button>
+
+<div id="letter">
+
+<div class="kiss">
+🐱💋😽🐱
+</div>
+
+<h2>For My Balaa 💜</h2>
+
+<p>
+Happy Birthday माझी बाळा 💜<br><br>
+
+I don't know how to explain how much I love you.
+तू माझ्या आयुष्यात आलीस आणि सगळंच सुंदर झालं. ❤️<br><br>
+
+Even though we're far apart, you're always close to my heart.
+Every morning starts with thoughts of you and every night ends with thoughts of you. 💜<br><br>
+
+I love your smile.<br>
+I love your voice.<br>
+I love your eyes.<br>
+I love your care.<br>
+I love your cute little things.<br><br>
+
+I love you.<br>
+I love you.<br>
+I love you.<br>
+And I'll keep loving you forever. ❤️<br><br>
+
+One day we'll celebrate together, laugh together and make beautiful memories together. ✨<br><br>
+
+तू माझी favourite person आहेस बाळा. 💜<br><br>
+
+🐾 Paww of kisses 😽💋💋💋💋💋💋💋<br><br>
+
+Forever Yours,<br>
+❤️ Shivam ❤️
+</p>
+
+</div>
+</div>
+</div>
+
+<script>
+const items=["💜","🎈","🧁","🐾","🐱","💕"];
+for(let i=0;i<45;i++){
+let e=document.createElement("div");
+e.className="float";
+e.innerHTML=items[Math.floor(Math.random()*items.length)];
+e.style.left=Math.random()*100+"%";
+e.style.animationDuration=(8+Math.random()*8)+"s";
+document.body.appendChild(e);
+}
+</script>
+
+</body>
+</html>
